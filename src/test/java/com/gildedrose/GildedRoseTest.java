@@ -205,5 +205,4 @@ class GildedRoseTest {
         assertEquals(1, app.items[1].quality);
 
     }
-
 }
