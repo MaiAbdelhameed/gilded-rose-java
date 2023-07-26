@@ -60,14 +60,17 @@ class GildedRose {
 //    }
 
 
+
+
     /* To refactor the above code:
-    - used for-each loop instead of loop using indices
+    - use for-each loop instead of for loop
     - use switch case
     - remove nested if's
     - merge if's into one condition
     - remove "quantity = quantity - quantity" with quantity = 0
+    - use operators "quantity--" and "quantity+=2" ...etc instead of traditional assignment (more readable)
     - create update quality fns for each type of items
- */
+    */
 
     public void updateQuality() {
         for (Item currItem: items){
