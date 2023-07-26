@@ -6,15 +6,6 @@ class GildedRose {
     public GildedRose(Item[] items) {
         this.items = items;
     }
-/* To refactor this code:
-    - used for-each loop instead of loop using indices
-    - use switch case
-    - remove nested if's
-    - merge if's into one condition
-    - remove "quantity = quantity - quantity" with quantity = 0
-    - create update quality fns for each type of items
- */
-
 //    public void updateQuality() {
 //        for (int i = 0; i < items.length; i++) {
 //            if (!items[i].name.equals("Aged Brie")
@@ -67,6 +58,16 @@ class GildedRose {
 //            }
 //        }
 //    }
+
+
+    /* To refactor the above code:
+    - used for-each loop instead of loop using indices
+    - use switch case
+    - remove nested if's
+    - merge if's into one condition
+    - remove "quantity = quantity - quantity" with quantity = 0
+    - create update quality fns for each type of items
+ */
 
     public void updateQuality() {
         for (Item currItem: items){

@@ -112,7 +112,7 @@ class GildedRoseTest {
 
     //////////////////// Sulfuras ////////////////////
     @Test // 1) quality and sellIn never changes
-    void checkSulfuras() { // check that sulfuras quality value never changes
+    void checkSulfuras() {
         Item[] items = new Item[] { new Item("Sulfuras, Hand of Ragnaros",5 , 5 )};
         GildedRose app = new GildedRose(items);
         app.updateQuality();
@@ -141,7 +141,7 @@ class GildedRoseTest {
 
     @Test // 2) quality decrease by 2 when sellIn less than or equals to 0
     void checkRegularItemsSellInLessThanOrEqualToZero() {
-        Item[] items = new Item[] { new Item("Regular Items",-1 , 5 ),
+        Item[] items = new Item[] { new Item("Default Items",-1 , 5 ),
                 new Item("Regular Items",0 , 4)};
         GildedRose app = new GildedRose(items);
         app.updateQuality();
@@ -155,7 +155,7 @@ class GildedRoseTest {
 
     @Test // 3) quality is never negative
     void checkRegularItemQualityNeverNegative() {
-        Item[] items = new Item[] { new Item("Regular Item",9 , 0 )};
+        Item[] items = new Item[] { new Item("Unnamed Item",9 , 0 )};
         GildedRose app = new GildedRose(items);
         app.updateQuality();
 
